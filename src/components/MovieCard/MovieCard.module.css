@@ -1,0 +1,32 @@
+.container {
+  padding: 85px 18px 18px;
+  display: flex;
+  gap: 24px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.review {
+  font-size: 24px;
+}
+.wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+}
+.genres {
+  font-size: 18px;
+}
+
+.more {
+  font-size: 24px;
+}
+.additional {
+  margin-left: 50px;
+}

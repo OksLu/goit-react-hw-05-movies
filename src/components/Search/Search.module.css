@@ -1,0 +1,19 @@
+.wrapper {
+  padding: 20px;
+  background-color: #07030a;
+  box-shadow: 0 20px 20px -20px rgba(0, 0, 0, 0.8),
+    inset 0 20px 20px -20px rgba(0, 0, 0, 0.8);
+}
+.input {
+  margin-top: 100px;
+  width: 300px;
+  height: 40px;
+  line-height: 38px;
+  padding: 0 100px 0 10px;
+  border-radius: 3px;
+  background-color: #1f2123;
+  color: #999;
+  font-family: inherit;
+  font-size: 20px;
+  border: 1px solid #444;
+}

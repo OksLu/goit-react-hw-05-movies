@@ -1,0 +1,15 @@
+.review {
+  border: 1px solid #eeeeee;
+  margin-bottom: 12px;
+  margin-top: 12px;
+  padding: 8px;
+}
+
+.text {
+  font-size: 20px;
+}
+
+.failure {
+  display: flex;
+  justify-content: center;
+}
