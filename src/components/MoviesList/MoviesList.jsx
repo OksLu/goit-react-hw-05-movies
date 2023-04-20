@@ -21,9 +21,7 @@ const MoviesList = ({ movies, location }) => {
                   width="300"
                   height="450"
                 />
-                <h2 className={css.title}>
-                  {item.title || item.original_title}
-                </h2>
+                <h2 className={css.title}>{item.title || item.name}</h2>
               </Link>
             </li>
           );
