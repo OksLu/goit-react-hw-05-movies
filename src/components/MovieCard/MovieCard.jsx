@@ -1,9 +1,9 @@
-import { Link, Outlet, useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import css from './MovieCard.module.css';
 import { useRef } from 'react';
 import { FaArrowLeft } from 'react-icons/fa';
 import propTypes from 'prop-types';
-import poster from '../../images/poster.jpg';
+import poster from '../../images/movie-clip-art-28.png';
 
 export const MovieCard = ({ movie }) => {
   const location = useLocation();
@@ -51,12 +51,11 @@ export const MovieCard = ({ movie }) => {
             </Link>
           </li>
           <li>
-            <Link to="reviews" className={css.more}>
+            <Link to="review" className={css.more}>
               Reviews
             </Link>
           </li>
         </ul>
-        <Outlet />
       </div>
     </div>
   );

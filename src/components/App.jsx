@@ -8,6 +8,7 @@ const Movies = lazy(() => import('pages/Movies'));
 const MoviePage = lazy(() => import('pages/MoviePage'));
 const Cast = lazy(() => import('./Cast/Cast'));
 const Review = lazy(() => import('./Review/Review'));
+const NotFound = lazy(() => import('./NotFound/NotFound'));
 
 export const App = () => {
   return (
@@ -15,13 +16,13 @@ export const App = () => {
       <Header />
       <Suspense fallback={<Loader />}>
         <Routes>
-          <Route path="/" element={<Home />}></Route>
-          <Route path="/movies" element={<Movies />}></Route>
-          <Route path="/movies/:id/*" element={<MoviePage />}>
+          <Route index element={<Home />}></Route>
+          <Route path="movies" element={<Movies />}></Route>
+          <Route path="movies/:id" element={<MoviePage />}>
             <Route path="cast" element={<Cast />} />
-            <Route path="reviews" element={<Review />} />
+            <Route path="review" element={<Review />} />
           </Route>
-          <Route path="*" element={<Home />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </Suspense>
     </div>

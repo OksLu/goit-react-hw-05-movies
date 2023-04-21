@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import css from './MoviesList.module.css';
 import propTypes from 'prop-types';
-import poster from '../../images/poster.jpg';
+import poster from '../../images/movie-clip-art-28.png';
 
 const MoviesList = ({ movies, location }) => {
   return (
@@ -34,7 +34,7 @@ MoviesList.prototype = {
   movies: propTypes.shape({
     id: propTypes.number.isRequired,
     poster_path: propTypes.string.isRequired,
-    original_title: propTypes.string.isRequired,
+    name: propTypes.string.isRequired,
     title: propTypes.string.isRequired,
   }).isRequired,
 };

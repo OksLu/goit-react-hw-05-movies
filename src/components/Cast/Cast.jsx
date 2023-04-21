@@ -2,7 +2,7 @@ import { fetchCast } from 'components/API/FetchCast';
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import css from './Cast.module.css';
-import profile from '../../images/profile.webp';
+import profile from '../../images/Default_pfp.svg.png';
 
 const Cast = () => {
   const { id } = useParams();
@@ -16,7 +16,7 @@ const Cast = () => {
       {cast &&
         cast.map(({ id, profile_path, name }) => {
           return (
-            <li key={id}>
+            <li key={id} className={css.item}>
               <img
                 src={
                   profile_path
@@ -25,7 +25,6 @@ const Cast = () => {
                 }
                 alt={name}
                 width="300"
-                height="450"
               />
 
               <h2>{name}</h2>
